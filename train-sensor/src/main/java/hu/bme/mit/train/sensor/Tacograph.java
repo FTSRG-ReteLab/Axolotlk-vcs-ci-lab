@@ -8,7 +8,7 @@ import hu.bme.mit.train.interfaces.TrainSensor;
 
 public class Tacograph {
 
-    private Table adatok = HashBasedTable.create();
+    private HashBasedTable adatok = HashBasedTable.create();
 
     public Tacograph(TrainController controller, TrainUser user) {
         adatok.put(0,0,System.currentTimeMillis());
@@ -16,7 +16,7 @@ public class Tacograph {
         adatok.put(0,2,controller.getReferenceSpeed());
     }
 
-    public Table getAdatok() {
+    public HashBasedTable getAdatok() {
         return adatok;
     }
 }
