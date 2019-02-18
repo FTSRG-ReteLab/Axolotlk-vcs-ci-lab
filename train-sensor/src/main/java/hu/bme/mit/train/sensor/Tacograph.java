@@ -6,11 +6,11 @@ import hu.bme.mit.train.interfaces.TrainUser;
 import hu.bme.mit.train.interfaces.TrainSensor;
 
 
-public class Tachograph {
+public class Tacograph {
 
     private Table adatok = HashBasedTable.create();
 
-    public Tachograph(TrainController controller, TrainUser user) {
+    public Tacograph(TrainController controller, TrainUser user) {
         adatok.put(0,0,System.currentTimeMillis());
         adatok.put(0,1,user.getJoystickPosition());
         adatok.put(0,2,controller.getReferenceSpeed());
