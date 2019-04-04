@@ -15,7 +15,7 @@ public class TrainControllerImpl implements TrainController {
 
 	public TrainControllerImpl(){
 		TimerTask timertask = new TimerTask(){
-			public void start(){
+			public void run(){
 				followSpeed();
 			}
 		};
