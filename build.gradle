@@ -3,16 +3,16 @@ plugins {
     id 'jacoco'
     }
     
-jacoco {
-    toolVersion = "0.8.3"
-    reportsDir = file("$buildDir/customJacocoReportDir")
-}
+
 
 subprojects { subproject ->
   apply plugin: 'java'
   apply plugin: 'org.sonarqube'
   apply plugin: 'jacoco'
-  
+  jacoco {
+    toolVersion = "0.8.3"
+    reportsDir = file("$buildDir/customJacocoReportDir")
+}
   jacocoTestReport {
     reports {
         xml.enabled false
