@@ -8,6 +8,13 @@ subprojects { subproject ->
   apply plugin: 'org.sonarqube'
   apply plugin: 'jacoco'
   
+  jacocoTestReport {
+    reports {
+        xml.enabled false
+        csv.enabled false
+        html.destination file("${buildDir}/jacocoHtml")
+    }
+}
   repositories {
     jcenter()
   }
