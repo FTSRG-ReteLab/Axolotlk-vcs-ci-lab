@@ -3,7 +3,6 @@ package hu.bme.mit.train.sensor;
 import com.google.common.collect.HashBasedTable;
 import hu.bme.mit.train.interfaces.TrainController;
 import hu.bme.mit.train.interfaces.TrainUser;
-import hu.bme.mit.train.interfaces.TrainSensor;
 
 
 public class Tacograph {
