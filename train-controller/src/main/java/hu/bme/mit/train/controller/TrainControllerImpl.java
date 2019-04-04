@@ -7,6 +7,17 @@ public class TrainControllerImpl implements TrainController {
 	private int step = 0;
 	private int referenceSpeed = 0;
 	private int speedLimit = 0;
+	Timer ut = new Timer();
+
+	public TrainControllerImpl(){
+		TimerTask tt = new TimerTask(){
+			public void start(){
+				followSpeed();
+			}
+		};
+
+		ut.schedule(tt, 0, 500);
+	}
 
 	@Override
 	public void followSpeed() {

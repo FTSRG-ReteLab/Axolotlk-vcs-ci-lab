@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\train-interfaces\\src",
+    "\\train-interfaces\\src\\main",
+    "\\train-interfaces\\src\\main\\java",
+    "\\train-interfaces\\src\\main\\java\\hu",
+    "\\train-interfaces\\src\\main\\java\\hu\\bme",
+    "\\train-interfaces\\src\\main\\java\\hu\\bme\\mit",
+    "\\train-interfaces\\src\\main\\java\\hu\\bme\\mit\\train",
+    "\\train-interfaces\\src\\main\\java\\hu\\bme\\mit\\train\\interfaces",
+    "\\train-user"
+  ],
+  "SelectedNode": "\\train-controller\\src\\main\\java\\hu\\bme\\mit\\train\\controller\\TrainControllerImpl.java",
+  "PreviewInSolutionExplorer": false
+}
