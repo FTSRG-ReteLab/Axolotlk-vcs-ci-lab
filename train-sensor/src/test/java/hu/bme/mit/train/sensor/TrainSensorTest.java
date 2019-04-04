@@ -48,6 +48,6 @@ public class TrainSensorTest {
     @Test
     public void alarmTest(){
         sensor.overrideSpeedLimit(150);
-        verify(User).setAlarmState(false);
+        verify(user).setAlarmState(false);
     }
 }
