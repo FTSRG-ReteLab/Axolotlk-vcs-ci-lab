@@ -22,12 +22,6 @@ subprojects { subproject ->
   repositories {
     jcenter()
   }
-  test {
-    jacoco {
-        destinationFile = file("$buildDir/jacoco/jacocoTest.exec")
-        classDumpDir = file("$buildDir/jacoco/classpathdumps")
-    }
-}
   
   dependencies {
   	compile group: 'com.google.guava', name: 'guava', version: '27.0.1-jre'
